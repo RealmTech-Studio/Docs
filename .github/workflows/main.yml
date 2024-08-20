@@ -1,0 +1,23 @@
+name: Trigger Main Repo Workflow
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  schedule:
+    - cron: '0 0 * * *'  # 每天运行一次
+
+jobs:
+  trigger-main-repo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Trigger Main Repo Workflow
+        run: |
+          curl -X POST -H "Accept: application/vnd.github.v3+json" \
+          -H "Authorization: token ${{ secrets.BOT }}" \
+          https://github.com/RealmTech-Studio/RTD-Hosting/blob/main/.github/workflows/main.yml \
+          -d '{"ref":"main"}'
+          fi
