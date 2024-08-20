@@ -20,4 +20,3 @@ jobs:
           -H "Authorization: token ${{ secrets.BOT }}" \
           https://github.com/RealmTech-Studio/RTD-Hosting/blob/main/.github/workflows/main.yml \
           -d '{"ref":"main"}'
-          fi
