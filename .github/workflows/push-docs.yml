@@ -1,4 +1,4 @@
-name: Trigger Main Repo Workflow
+name: Push-Docs-To-Hosting
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [ "main" ]
   schedule:
-    - cron: '0 0 * * *'  # 每天运行一次
+    - cron: '0 0 * * *'  # 每天运行一次，也可手动触发
 
 jobs:
   trigger-main-repo:
