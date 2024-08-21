@@ -8,5 +8,5 @@ export default defineUserConfig({
 
   lang: 'zh-CN',
   title: '你好， Wiki ！',
-  description: '这是我的第一个 VuePress 站点，我很开心',
+  description: '这是我的第一个 Wiki 站点，我很开心',
 })
