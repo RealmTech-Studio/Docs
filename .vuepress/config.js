@@ -8,5 +8,5 @@ export default defineUserConfig({
 
   lang: 'zh-CN',
   title: '你好， Wiki ！',
-  description: '站点',
+  description: '方域科技 RealmTech',
 })
