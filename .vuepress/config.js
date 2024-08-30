@@ -5,7 +5,7 @@ import { defineUserConfig } from 'vuepress'
 export default defineUserConfig({
   bundler: viteBundler(),
   theme: defaultTheme(),
-
+  dest: '.vuepress/dist',
   lang: 'zh-CN',
   title: '你好， Wiki ！',
   description: '方域科技 RealmTech',
